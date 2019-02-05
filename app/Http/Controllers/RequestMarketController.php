@@ -53,6 +53,6 @@ class RequestMarketController extends Controller
             
         $content = $this->currency->request('GET',$endpoint,$params);
 
-        return $content[$id]['logo'];
+        return $content[$id];
     }
 }
