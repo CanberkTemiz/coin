@@ -36,7 +36,7 @@
          success: function(data) {
             var website =  data['urls']['website'][0];
             var html = '<img id="logo" src=' + data['logo'] + '>';
-            html += '<p>CMC RANK:' + rank + '</p>';
+            html += '<h3>CMC RANK:' + rank + '</h3>';
             html += '<p>Circulating Supply:' + extraInfo + '</p>';
             html += '<a href=' + website +'>Go to official website</a>'
 
@@ -61,8 +61,24 @@
 </script>
 
 <style>
-    li{
+    li{      
         margin: 1.5em;
+        list-style-type: none;
+        margin: 1.5em;
+        border-style: solid;
+        border-radius: 11px;
+        padding: 7px;
+        width: 13%;
+        text-align: center;
+        color: darkmagenta;
+        background-color: ghostwhite;
+        font-family: Monocrom;
+        font-size: 1em;
+        font-weight: 700;
+        cursor: pointer;
+    }
 
+    li:hover{
+       background-color: white;
     }
 </style>
