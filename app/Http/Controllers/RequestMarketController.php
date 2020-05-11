@@ -55,4 +55,8 @@ class RequestMarketController extends Controller
 
         return $content[$id];
     }
+
+    public function displayLogos() {
+        return 31;
+    }
 }
