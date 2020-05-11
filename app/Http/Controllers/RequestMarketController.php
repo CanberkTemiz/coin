@@ -16,6 +16,8 @@ class RequestMarketController extends Controller
     public function index(){
 
         $endpoint = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest";
+
+        $secondEndPoint = "falanda filanda";
         
         $params = [
             'query' => [
@@ -59,4 +61,6 @@ class RequestMarketController extends Controller
     public function displayLogos() {
         return 31;
     }
+
+
 }
